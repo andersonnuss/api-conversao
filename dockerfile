@@ -2,6 +2,6 @@ FROM node:14-alpine3.13
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
-COPY . .
+COPY . ./
 EXPOSE 8080
-CMD ["node", "node.js"]
+CMD ["node", "index.js"]
